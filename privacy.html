@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πολιτική Απορρήτου – Εὖ Ζῆν Κατ' Οίκον Νοσηλεία</title>
+    <meta name="description" content="Πολιτική απορρήτου της ιστοσελίδας Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία στη Θεσσαλονίκη.">
+    <link rel="canonical" href="https://evzin-homecare.gr/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evzin-homecare.gr/privacy.html">
+    <meta property="og:title" content="Πολιτική Απορρήτου – Εὖ Ζῆν Κατ' Οίκον Νοσηλεία">
+    <meta property="og:description" content="Πολιτική απορρήτου της ιστοσελίδας Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία στη Θεσσαλονίκη.">
+    <meta property="og:image" content="https://evzin-homecare.gr/euzin-logo.png">
+    <meta property="og:locale" content="el_GR">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --color-cream: #faf8f3;
+        --color-sage: #9ca89e;
+        --color-warm-gray: #6b6b6b;
+        --color-terracotta: #bf9d5f;
+        --color-warm-accent: #d4b878;
+        --color-off-white: #f5f3f0;
+        --color-dark: #2d2d2d;
+        --font-serif: 'Lora', serif;
+        --font-sans: 'Source Sans Pro', sans-serif;
+        --transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans, 'Source Sans Pro', sans-serif);
+            min-height: 100vh;
+            background: var(--color-cream, #faf8f3);
+            color: var(--color-dark, #2d2d2d);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        header { background: linear-gradient(135deg, rgba(250, 248, 243, 0.98) 0%, rgba(245, 243, 240, 0.98) 100%); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(200, 132, 90, 0.1); box-shadow: none;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo { height: 50px;
+        }
+
+        .call-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-terracotta, #bf9d5f);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .call-btn:hover {
+            background: #a8894f;
+        }
+
+        .call-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .call-btn span {
+            display: none;
+        }
+
+        @media (min-width: 640px) {
+            .call-btn span {
+                display: inline;
+            }
+        }
+
+        /* Nav */
+        .header-nav { display: flex; gap: 2.5rem;
+        }
+
+        .nav-link {
+            color: var(--color-dark, #2d2d2d);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 0;
+            
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .nav-link:hover { color: var(--color-terracotta, #bf9d5f); }
+
+        /* Content */
+        main {
+            padding: 3rem 1rem;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-dark, #2d2d2d);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .legal-content h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-dark, #2d2d2d);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+            color: var(--color-warm-gray, #6b6b6b);
+        }
+
+        .legal-content ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            color: var(--color-warm-gray, #6b6b6b);
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer { background: var(--color-dark, #2d2d2d); color: white; padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            height: 40px;
+            filter: brightness(0) invert(1); opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .footer-tagline { color: rgba(255,255,255,0.7);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-copyright { color: rgba(255,255,255,0.5);
+            font-size: 0.875rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .footer-links a { color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="modern.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html">
+                <img src="euzin-logo.png" alt="Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία" class="header-logo">
+            </a>
+            <nav class="header-nav">
+                <a href="services.html" class="nav-link">Υπηρεσίες</a>
+                <a href="articles.html" class="nav-link">Άρθρα</a>
+                <a href="contact.html" class="nav-link">Επικοινωνία</a>
+            </nav>
+            <a href="tel:+306937310198" class="call-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+                <span>Καλέστε μας</span>
+            </a>
+            <button class="menu-toggle" aria-label="Μενού">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav-overlay"></div>
+    <nav class="mobile-nav">
+        <div class="mobile-nav-header">
+            <img src="euzin-logo.png" alt="Εὖ Ζῆν">
+            <button class="mobile-nav-close" aria-label="Κλείσιμο">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="index.html">Αρχική</a>
+            <a href="services.html">Υπηρεσίες</a>
+            <a href="articles.html">Άρθρα</a>
+            <a href="contact.html">Επικοινωνία</a>
+        </div>
+        <div class="mobile-nav-cta">
+            <a href="tel:+306937310198">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                Καλέστε μας
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="page-title">Πολιτική Απορρήτου</h1>
+
+        <div class="legal-content">
+            <h2>1. Εισαγωγή</h2>
+            <p>Η «Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία» σέβεται το απόρρητό σας και δεσμεύεται να προστατεύει τα προσωπικά σας δεδομένα σύμφωνα με τον Γενικό Κανονισμό Προστασίας Δεδομένων (GDPR) και την ελληνική νομοθεσία.</p>
+
+            <h2>2. Ποια Δεδομένα Συλλέγουμε</h2>
+            <p>Κατά τη χρήση της ιστοσελίδας μας, ενδέχεται να συλλέγουμε τα ακόλουθα δεδομένα:</p>
+            <ul>
+                <li>Στοιχεία επικοινωνίας (ονοματεπώνυμο, τηλέφωνο, email) που μας παρέχετε μέσω της φόρμας επικοινωνίας</li>
+                <li>Τεχνικά δεδομένα (διεύθυνση IP, τύπος προγράμματος περιήγησης, λειτουργικό σύστημα)</li>
+                <li>Δεδομένα χρήσης (σελίδες που επισκέπτεστε, χρόνος παραμονής)</li>
+            </ul>
+
+            <h2>3. Σκοπός Επεξεργασίας</h2>
+            <p>Τα δεδομένα σας χρησιμοποιούνται αποκλειστικά για:</p>
+            <ul>
+                <li>Την ανταπόκριση στα αιτήματα επικοινωνίας σας</li>
+                <li>Την παροχή των υπηρεσιών κατ' οίκον νοσηλείας</li>
+                <li>Τη βελτίωση της ιστοσελίδας μας</li>
+                <li>Τη συμμόρφωση με νομικές υποχρεώσεις</li>
+            </ul>
+
+            <h2>4. Νομική Βάση Επεξεργασίας</h2>
+            <p>Η επεξεργασία των δεδομένων σας βασίζεται στη συγκατάθεσή σας, στην εκτέλεση σύμβασης παροχής υπηρεσιών ή στη συμμόρφωση με νομικές υποχρεώσεις.</p>
+
+            <h2>5. Διατήρηση Δεδομένων</h2>
+            <p>Τα προσωπικά σας δεδομένα διατηρούνται μόνο για όσο χρονικό διάστημα είναι απαραίτητο για την εκπλήρωση των σκοπών για τους οποίους συλλέχθηκαν ή για τη συμμόρφωση με νομικές υποχρεώσεις.</p>
+
+            <h2>6. Δικαιώματά σας</h2>
+            <p>Σύμφωνα με τον GDPR, έχετε τα ακόλουθα δικαιώματα:</p>
+            <ul>
+                <li>Δικαίωμα πρόσβασης στα δεδομένα σας</li>
+                <li>Δικαίωμα διόρθωσης ανακριβών δεδομένων</li>
+                <li>Δικαίωμα διαγραφής («δικαίωμα στη λήθη»)</li>
+                <li>Δικαίωμα περιορισμού της επεξεργασίας</li>
+                <li>Δικαίωμα φορητότητας δεδομένων</li>
+                <li>Δικαίωμα εναντίωσης στην επεξεργασία</li>
+            </ul>
+
+            <h2>7. Ασφάλεια Δεδομένων</h2>
+            <p>Λαμβάνουμε κατάλληλα τεχνικά και οργανωτικά μέτρα για την προστασία των προσωπικών σας δεδομένων από μη εξουσιοδοτημένη πρόσβαση, αλλοίωση, αποκάλυψη ή καταστροφή.</p>
+
+            <h2>8. Cookies</h2>
+            <p>Η ιστοσελίδα μας μπορεί να χρησιμοποιεί cookies για τη βελτίωση της εμπειρίας περιήγησής σας. Μπορείτε να ρυθμίσετε τον περιηγητή σας ώστε να απορρίπτει τα cookies, αν και αυτό μπορεί να επηρεάσει ορισμένες λειτουργίες της ιστοσελίδας.</p>
+
+            <h2>9. Κοινοποίηση σε Τρίτους</h2>
+            <p>Δεν πουλάμε, ανταλλάσσουμε ή μεταβιβάζουμε τα προσωπικά σας δεδομένα σε τρίτους χωρίς τη συγκατάθεσή σας, εκτός εάν αυτό απαιτείται από τον νόμο.</p>
+
+            <h2>10. Αλλαγές στην Πολιτική Απορρήτου</h2>
+            <p>Διατηρούμε το δικαίωμα να ενημερώνουμε την παρούσα πολιτική απορρήτου. Οποιεσδήποτε αλλαγές θα δημοσιεύονται σε αυτή τη σελίδα.</p>
+
+            <h2>11. Επικοινωνία</h2>
+            <p>Για οποιαδήποτε ερώτηση σχετικά με την πολιτική απορρήτου ή για την άσκηση των δικαιωμάτων σας, μπορείτε να επικοινωνήσετε μαζί μας στο τηλέφωνο <a href="tel:+306937310198" style="color: var(--color-terracotta, #bf9d5f);">+30 693 731 0198</a> ή μέσω της σελίδας <a href="contact.html" style="color: var(--color-terracotta, #bf9d5f);">Επικοινωνία</a>.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <img src="euzin-logo.png" alt="Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία" class="footer-logo">
+            <p class="footer-tagline">Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία</p>
+            <div class="footer-links">
+                <a href="terms.html">Όροι Χρήσης</a>
+                <a href="privacy.html">Πολιτική Απορρήτου</a>
+            </div>
+            <p class="footer-copyright">© 2026 Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία — Όλα τα δικαιώματα κατοχυρωμένα</p>
+        </div>
+    </footer>
+    <script src="shared.js"></script>
+</body>
+
+</html>

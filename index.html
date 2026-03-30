@@ -1,0 +1,1844 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Κατ' Οίκον Νοσηλεία Θεσσαλονίκη | Εὖ Ζῆν – 24/7 Φροντίδα στο Σπίτι
+    </title>
+    <meta
+      name="description"
+      content="Φροντίδα υγείας στον χώρο σας με επαγγελματισμό και σεβασμό. 24/7 διαθεσιμότητα στη Θεσσαλονίκη."
+    />
+    <meta
+      name="keywords"
+      content="κατ οίκον νοσηλεία Θεσσαλονίκη, νοσηλεία στο σπίτι, νοσηλευτής στο σπίτι Θεσσαλονίκη, κατ οίκον φροντίδα, 24/7 νοσηλεία, αιμοληψία στο σπίτι, φλεβοκέντηση κατ οίκον, ενέσεις στο σπίτι Θεσσαλονίκη"
+    />
+    <link rel="canonical" href="https://evzin-homecare.gr/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://evzin-homecare.gr/" />
+    <meta
+      property="og:title"
+      content="Κατ' Οίκον Νοσηλεία Θεσσαλονίκη | Εὖ Ζῆν – 24/7 Φροντίδα στο Σπίτι"
+    />
+    <meta
+      property="og:description"
+      content="Φροντίδα υγείας στον χώρο σας με επαγγελματισμό και σεβασμό. 24/7 διαθεσιμότητα στη Θεσσαλονίκη."
+    />
+    <meta
+      property="og:image"
+      content="https://evzin-homecare.gr/euzin-logo.png"
+    />
+    <meta property="og:locale" content="el_GR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Κατ' Οίκον Νοσηλεία Θεσσαλονίκη | Εὖ Ζῆν"
+    />
+    <meta
+      name="twitter:description"
+      content="Φροντίδα υγείας στον χώρο σας με επαγγελματισμό και σεβασμό. 24/7 διαθεσιμότητα στη Θεσσαλονίκη."
+    />
+    <meta
+      name="twitter:image"
+      content="https://evzin-homecare.gr/euzin-logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία",
+        "description": "Υπηρεσίες κατ' οίκον νοσηλείας στη Θεσσαλονίκη. Φροντίδα υγείας στον χώρο σας με επαγγελματισμό και σεβασμό, 24/7 διαθεσιμότητα.",
+        "url": "https://evzin-homecare.gr",
+        "telephone": "+306937310198",
+        "areaServed": {
+          "@type": "City",
+          "name": "Θεσσαλονίκη",
+          "containedInPlace": { "@type": "Country", "name": "Ελλάδα" }
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Θεσσαλονίκη",
+          "addressCountry": "GR"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "medicalSpecialty": "Home Health Care Services",
+        "sameAs": [
+          "https://www.instagram.com/evzin_homecare/",
+          "https://www.facebook.com/evzin.homecare/",
+          "https://www.xo.gr/profile/profile-911747657/el/"
+        ],
+        "logo": "https://evzin-homecare.gr/euzin-logo.png",
+        "image": "https://evzin-homecare.gr/euzin-logo.png"
+      }
+    </script>
+    <style>
+      :root {
+        --color-cream: #faf8f3;
+        --color-sage: #9ca89e;
+        --color-warm-gray: #6b6b6b;
+        --color-terracotta: #bf9d5f;
+        --color-warm-accent: #d4b878;
+        --color-off-white: #f5f3f0;
+        --color-dark: #2d2d2d;
+        --font-serif: 'Lora', serif;
+        --font-sans: 'Source Sans Pro', sans-serif;
+        --transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        background-color: var(--color-cream);
+        color: var(--color-dark);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(135deg, rgba(250, 248, 243, 0.98) 0%, rgba(245, 243, 240, 0.98) 100%);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(200, 132, 90, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        animation: slideDown 0.6s ease-out;
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+      }
+
+      .header-logo {
+        height: 50px;
+        display: block;
+        transition: var(--transition);
+      }
+
+      .header-logo:hover {
+        transform: scale(1.05);
+      }
+
+      .header-nav {
+        display: none;
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        .header-nav {
+          display: flex;
+        }
+      }
+
+      .nav-link {
+        color: var(--color-dark);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.95rem;
+        position: relative;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--color-terracotta);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: var(--color-terracotta);
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .call-btn {
+        display: none;
+        align-items: center;
+        gap: 0.75rem;
+        background: var(--color-terracotta);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        box-shadow: 0 8px 20px rgba(200, 132, 90, 0.25);
+        transition: var(--transition);
+      }
+
+      @media (min-width: 768px) {
+        .call-btn {
+          display: inline-flex;
+        }
+      }
+
+      .call-btn:hover {
+        background: var(--color-warm-accent);
+        box-shadow: 0 12px 30px rgba(200, 132, 90, 0.35);
+        transform: translateY(-2px);
+      }
+
+      .call-btn svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: var(--color-dark);
+        transition: color 0.3s ease;
+      }
+
+      @media (min-width: 768px) {
+        .menu-toggle {
+          display: none;
+        }
+      }
+
+      .menu-toggle:hover {
+        color: var(--color-terracotta);
+      }
+
+      .menu-toggle svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      /* Mobile Navigation */
+      .mobile-nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+
+      .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--color-cream);
+        flex-direction: column;
+        z-index: 1000;
+        overflow-y: auto;
+      }
+
+      .mobile-nav.active {
+        display: flex;
+      }
+
+      .mobile-nav-overlay.active {
+        display: block;
+      }
+
+      .mobile-nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        border-bottom: 1px solid rgba(200, 132, 90, 0.1);
+      }
+
+      .mobile-nav-header img {
+        height: 40px;
+      }
+
+      .mobile-nav-close {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: var(--color-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .mobile-nav-close svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+        flex: 1;
+      }
+
+      .mobile-nav-links a {
+        color: var(--color-dark);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+      }
+
+      .mobile-nav-links a:hover,
+      .mobile-nav-links a.active {
+        color: var(--color-terracotta);
+      }
+
+      .mobile-nav-cta {
+        padding: 1.5rem;
+        border-top: 1px solid rgba(200, 132, 90, 0.1);
+      }
+
+      .mobile-nav-cta a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        background: var(--color-terracotta);
+        color: white;
+        padding: 1rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 8px 20px rgba(200, 132, 90, 0.25);
+        transition: var(--transition);
+      }
+
+      .mobile-nav-cta a:hover {
+        background: var(--color-warm-accent);
+        box-shadow: 0 12px 30px rgba(200, 132, 90, 0.35);
+      }
+
+      .mobile-nav-cta svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* Main Content */
+      main {
+        padding: 4rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        main {
+          padding: 6rem 0;
+        }
+      }
+
+      main > * {
+        max-width: 100%;
+      }
+
+      /* Hero Section */
+      .hero-logo {
+        height: 80px;
+        display: block;
+        margin: 0 auto 3rem;
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (min-width: 768px) {
+        .hero-logo {
+          height: 100px;
+          margin-bottom: 4rem;
+        }
+      }
+
+      h1 {
+        font-family: var(--font-serif);
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--color-dark);
+        margin-bottom: 2rem;
+        line-height: 1.2;
+        text-align: center;
+        animation: fadeInUp 0.8s ease-out 0.1s both;
+      }
+
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 3.5rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+
+      h1 span {
+        display: block;
+        color: var(--color-terracotta);
+        font-weight: 700;
+      }
+
+      .description {
+        font-size: 1.1rem;
+        color: var(--color-warm-gray);
+        max-width: 650px;
+        margin: 0 auto 3rem;
+        text-align: center;
+        animation: fadeInUp 0.8s ease-out 0.2s both;
+      }
+
+      @media (min-width: 768px) {
+        .description {
+          font-size: 1.25rem;
+          margin-bottom: 4rem;
+        }
+      }
+
+      .coming-soon {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-terracotta);
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        animation: fadeInUp 0.8s ease-out 0.3s both;
+      }
+
+      @media (min-width: 768px) {
+        .coming-soon {
+          font-size: 1.125rem;
+          margin-top: 4rem;
+          margin-bottom: 3rem;
+        }
+      }
+
+      /* Stats */
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        animation: fadeInUp 0.8s ease-out 0.4s both;
+      }
+
+      .stat {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        padding: 0.9rem 1.5rem;
+        border-radius: 50px;
+        border: 1px solid rgba(200, 132, 90, 0.15);
+        font-weight: 600;
+        color: var(--color-dark);
+        font-size: 0.9rem;
+        transition: var(--transition);
+      }
+
+      .stat:hover {
+        background: rgba(200, 132, 90, 0.08);
+        transform: translateY(-3px);
+        border-color: rgba(200, 132, 90, 0.3);
+      }
+
+      .stat svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+      }
+
+      .stat svg.star {
+        color: var(--color-warm-accent);
+      }
+
+      .stat svg.home {
+        color: var(--color-terracotta);
+      }
+
+      /* CTA Buttons */
+      .cta-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        background: var(--color-terracotta);
+        color: white;
+        font-size: 1.05rem;
+        font-weight: 700;
+        padding: 1.1rem 2.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 12px 30px rgba(200, 132, 90, 0.3);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+        animation: fadeInUp 0.8s ease-out 0.5s both;
+        margin: 2rem auto;
+      }
+
+      .cta-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s ease;
+      }
+
+      .cta-btn:hover::before {
+        left: 100%;
+      }
+
+      .cta-btn:hover {
+        background: var(--color-warm-accent);
+        box-shadow: 0 16px 40px rgba(200, 132, 90, 0.4);
+        transform: translateY(-3px);
+      }
+
+      .cta-btn svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .cta-secondary {
+        background: transparent;
+        color: var(--color-terracotta);
+        border: 2px solid var(--color-terracotta);
+        box-shadow: none;
+        margin-left: 1rem;
+        margin-top: 1rem;
+      }
+
+      .cta-secondary:hover {
+        background: var(--color-terracotta);
+        color: white;
+        box-shadow: 0 12px 30px rgba(200, 132, 90, 0.3);
+      }
+
+      /* Social Links */
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        animation: fadeInUp 0.8s ease-out 0.6s both;
+      }
+
+      .social-links a {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(200, 132, 90, 0.1);
+        border-radius: 50%;
+        color: var(--color-terracotta);
+        text-decoration: none;
+        transition: var(--transition);
+        border: 1px solid rgba(200, 132, 90, 0.2);
+      }
+
+      .social-links a:hover {
+        background: var(--color-terracotta);
+        color: white;
+        border-color: var(--color-terracotta);
+        transform: translateY(-4px);
+      }
+
+      .social-links svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      /* Services Section */
+      .services-section {
+        padding: 4rem 0;
+        background: linear-gradient(180deg, rgba(245,243,240,0.5) 0%, rgba(250,248,243,1) 100%);
+      }
+
+      @media (min-width: 768px) {
+        .services-section {
+          padding: 6rem 0;
+        }
+      }
+
+      .services-title {
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-dark);
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .services-title {
+          font-size: 2.8rem;
+        }
+      }
+
+      .services-subtitle {
+        text-align: center;
+        color: var(--color-warm-gray);
+        font-size: 1.05rem;
+        margin-bottom: 3rem;
+      }
+
+      .services-grid,
+      .services-grid-home {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      @media (min-width: 768px) {
+        .services-grid,
+        .services-grid-home {
+          gap: 2rem;
+          margin-bottom: 4rem;
+        }
+      }
+
+      .service-card {
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: var(--transition);
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        border: 1px solid rgba(200, 132, 90, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+      }
+
+      .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--color-terracotta);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+        z-index: 10;
+      }
+
+      .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 35px rgba(200, 132, 90, 0.15);
+        border-color: rgba(200, 132, 90, 0.2);
+      }
+
+      .service-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .service-card-image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+      }
+
+      .service-card-image-wrapper::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(45, 45, 45, 0.6), transparent);
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .service-card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+      }
+
+      .service-card:hover .service-card-image {
+        transform: scale(1.08);
+      }
+
+      .service-card-body {
+        padding: 1.25rem;
+        display: flex;
+        align-items: flex-start;
+        flex: 1;
+      }
+
+      .service-name {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--color-dark);
+        line-height: 1.4;
+      }
+
+      .services-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        background: var(--color-terracotta);
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 1rem 2.25rem;
+        border-radius: 50px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 10px 25px rgba(200, 132, 90, 0.3);
+        transition: var(--transition);
+      }
+
+      .services-cta:hover {
+        background: var(--color-warm-accent);
+        box-shadow: 0 15px 35px rgba(200, 132, 90, 0.4);
+        transform: translateY(-3px);
+      }
+
+      .services-cta svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .services-cta-secondary {
+        display: inline-flex;
+        background: var(--color-terracotta);
+        color: white;
+        border: none;
+        box-shadow: 0 10px 25px rgba(200, 132, 90, 0.3);
+        margin-bottom: 3rem;
+      }
+
+      .services-cta-secondary:hover {
+        background: var(--color-warm-accent);
+        box-shadow: 0 15px 35px rgba(200, 132, 90, 0.4);
+      }
+
+      /* Why Us Section */
+      .why-us-section {
+        padding: 4rem 0;
+      }
+
+      @media (min-width: 768px) {
+        .why-us-section {
+          padding: 6rem 0;
+        }
+      }
+
+      .why-us-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 900px;
+        margin: 3rem auto 0;
+      }
+
+      @media (min-width: 600px) {
+        .why-us-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (min-width: 900px) {
+        .why-us-grid {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+
+      .why-us-card {
+        text-align: center;
+        padding: 2.5rem 1.75rem;
+        background: linear-gradient(135deg, rgba(250,248,243,0.8) 0%, rgba(255,255,255,0.9) 100%);
+        border: 1px solid rgba(200, 132, 90, 0.15);
+        border-radius: 1.25rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        transition: var(--transition);
+      }
+
+      .why-us-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 35px rgba(200, 132, 90, 0.12);
+        border-color: rgba(200, 132, 90, 0.3);
+      }
+
+      .why-us-icon {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 1.5rem;
+        color: var(--color-terracotta);
+        flex-shrink: 0;
+      }
+
+      .why-us-card h3 {
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--color-dark);
+        margin-bottom: 0.75rem;
+      }
+
+      .why-us-card p {
+        font-size: 0.95rem;
+        color: var(--color-warm-gray);
+        line-height: 1.6;
+      }
+
+      /* How It Works Section */
+      .how-it-works-section {
+        padding: 4rem 0;
+        background: linear-gradient(180deg, rgba(245,243,240,0.5) 0%, rgba(250,248,243,1) 100%);
+      }
+
+      @media (min-width: 768px) {
+        .how-it-works-section {
+          padding: 6rem 0;
+        }
+      }
+
+      .how-it-works-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        max-width: 800px;
+        margin: 3rem auto 0;
+      }
+
+      @media (min-width: 768px) {
+        .how-it-works-grid {
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 2rem;
+        }
+      }
+
+      .how-step {
+        text-align: center;
+        position: relative;
+      }
+
+      .how-step-number {
+        font-family: var(--font-serif);
+        width: 60px;
+        height: 60px;
+        background: var(--color-terracotta);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 0 auto 1.5rem;
+        box-shadow: 0 8px 20px rgba(200, 132, 90, 0.3);
+      }
+
+      .how-step h3 {
+        font-family: var(--font-serif);
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--color-dark);
+        margin-bottom: 0.75rem;
+      }
+
+      .how-step p {
+        color: var(--color-warm-gray);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      @media (min-width: 768px) {
+        .how-step::after {
+          content: '';
+          position: absolute;
+          top: 30px;
+          right: -50%;
+          width: 50%;
+          height: 2px;
+          background: linear-gradient(90deg, var(--color-terracotta), transparent);
+        }
+
+        .how-step:last-child::after {
+          display: none;
+        }
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        padding: 4rem 0;
+      }
+
+      @media (min-width: 768px) {
+        .faq-section {
+          padding: 6rem 0;
+        }
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 3rem auto 0;
+      }
+
+      .faq-item {
+        background: white;
+        border: 1px solid rgba(200, 132, 90, 0.15);
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        transition: var(--transition);
+      }
+
+      .faq-item:hover {
+        box-shadow: 0 8px 25px rgba(200, 132, 90, 0.15);
+        border-color: rgba(200, 132, 90, 0.25);
+      }
+
+      .faq-question {
+        padding: 1.5rem;
+        background: linear-gradient(135deg, rgba(250,248,243,0.5) 0%, rgba(255,255,255,0.5) 100%);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        color: var(--color-dark);
+        user-select: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .faq-question:hover {
+        background: linear-gradient(135deg, rgba(200,132,90,0.1) 0%, rgba(200,132,90,0.05) 100%);
+      }
+
+      .faq-icon {
+        width: 24px;
+        height: 24px;
+        color: var(--color-terracotta);
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .faq-item.active .faq-icon {
+        transform: rotate(180deg);
+      }
+
+      .faq-answer {
+        padding: 0 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        color: var(--color-warm-gray);
+        line-height: 1.7;
+      }
+
+      .faq-item.active .faq-answer {
+        padding: 1.5rem;
+        max-height: 500px;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--color-dark);
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+      }
+
+      footer p {
+        margin-bottom: 0.5rem;
+        opacity: 0.9;
+      }
+
+      footer a {
+        color: var(--color-terracotta);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: var(--color-warm-accent);
+      }
+
+      /* Utilities */
+      .text-center {
+        text-align: center;
+      }
+
+      .mt-large {
+        margin-top: 3rem;
+      }
+
+      /* Animations */
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
+
+      .animate-pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* Print Styles */
+      @media print {
+        header, footer, .menu-toggle, .mobile-nav {
+          display: none;
+        }
+      }
+    </style>
+    <meta
+      name="google-site-verification"
+      content="_y1maEqes6IpQaolJuNtUEO2T51fSwusD8hUDCON_uM"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-content">
+        <a href="index.html">
+          <img
+            src="euzin-logo.png"
+            alt="Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία"
+            class="header-logo"
+          />
+        </a>
+        <nav class="header-nav">
+          <a href="services.html" class="nav-link">Υπηρεσίες</a>
+          <a href="articles.html" class="nav-link">Άρθρα</a>
+          <a href="contact.html" class="nav-link">Επικοινωνία</a>
+        </nav>
+        <a href="tel:+306937310198" class="call-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>Καλέστε μας</span>
+        </a>
+        <button class="menu-toggle" aria-label="Μενού" id="menuToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-header">
+        <img src="euzin-logo.png" alt="Εὖ Ζῆν" />
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Κλείσιμο">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="index.html" class="active">Αρχική</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="articles.html">Άρθρα</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </div>
+      <div class="mobile-nav-cta">
+        <a href="tel:+306937310198">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Καλέστε μας
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+      <img src="euzin-logo.png" alt="Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία" class="hero-logo" />
+
+      <h1>
+        Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία
+        <span style="display: block; font-size: 30px; color: var(--color-terracotta)"
+          >στη Θεσσαλονίκη</span
+        >
+      </h1>
+
+      <p class="description">
+        Φροντίδα στον χώρο σας, με επαγγελματισμό, σεβασμό και ανθρώπινη
+        προσέγγιση. Διαθέσιμοι 24 ώρες, 7 ημέρες την εβδομάδα.
+      </p>
+
+      <a href="tel:+306937310198" class="cta-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        +30 693 731 0198
+      </a>
+
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/evzin_homecare/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link instagram"
+          aria-label="Instagram"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.facebook.com/evzin.homecare/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link facebook"
+          aria-label="Facebook"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9V12h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.77l-.44 2.89h-2.33v6.99C18.34 21.12 22 16.99 22 12z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.xo.gr/profile/profile-911747657/el/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link xo"
+          aria-label="Χρυσός Οδηγός"
+        >
+          XO
+        </a>
+      </div>
+      <p class="coming-soon">
+        Παρέχουμε υπηρεσίες σε όλη τη Θεσσαλονίκη και γύρω περιοχές
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <svg
+            class="home"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          Φροντίδα στο Σπίτι
+        </div>
+      </div>
+    </main>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <a href="services.html" class="services-cta services-cta-secondary">
+          <span>Δείτε όλες τις υπηρεσίες</span>
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#fff"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+              fill="#fff"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="container">
+        <h2 class="services-title">Οι Υπηρεσίες μας</h2>
+        <p class="services-subtitle">
+          Παρέχουμε ολοκληρωμένες υπηρεσίες κατ' οίκον νοσηλείας με
+          επαγγελματισμό και αξιοπιστία
+        </p>
+        <div class="services-grid-home">
+          <a href="service-aimolepsia.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Αιμοληψία – Εξετάσεις Αίματος.webp"
+                alt="Αιμοληψία – Εξετάσεις Αίματος"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Αιμοληψία – Εξετάσεις Αίματος</div>
+            </div>
+          </a>
+          <a href="service-exetaseis-ouron.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Εξετάσεις Ούρων (Καλλιέργεια – Γενική Ούρων).webp"
+                alt="Εξετάσεις Ούρων"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Εξετάσεις Ούρων (Καλλιέργεια – Γενική Ούρων)
+              </div>
+            </div>
+          </a>
+          <a href="service-enesi.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Ένεση Υποδόρια – Ενδομυϊκή  Ένεση Εξωσωματικής.webp"
+                alt="Ένεση Υποδόρια – Ενδομυϊκή / Ένεση Εξωσωματικής"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Ένεση Υποδόρια – Ενδομυϊκή / Ένεση Εξωσωματικής
+              </div>
+            </div>
+          </a>
+          <a href="service-emvoliasmos.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Εμβολιασμός – Εμβόλιο Εποχικής Γρίπης.webp"
+                alt="Εμβολιασμός – Εμβόλιο Εποχικής Γρίπης"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Εμβολιασμός – Εμβόλιο Εποχικής Γρίπης
+              </div>
+            </div>
+          </a>
+          <a href="service-anarofisi.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Αναρρόφηση Τραχειοβρογχικών Εκκρίσεων.webp"
+                alt="Αναρρόφηση Τραχειοβρογχικών Εκκρίσεων"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Αναρρόφηση Τραχειοβρογχικών Εκκρίσεων
+              </div>
+            </div>
+          </a>
+          <a href="service-ourokathitiras-foley.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Αλλαγή – Τοποθέτηση Ουροκαθετήρα Foley (Διουρηθρικός – Υπερηβικός).webp"
+                alt="Αλλαγή – Τοποθέτηση Ουροκαθετήρα Foley"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Αλλαγή – Τοποθέτηση Ουροκαθετήρα Foley (Διουρηθρικός –
+                Υπερηβικός)
+              </div>
+            </div>
+          </a>
+          <a href="service-rinogastrikos-levin.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Αλλαγή – Τοποθέτηση Ρινογαστρικού Σωλήνα Levin.webp"
+                alt="Αλλαγή – Τοποθέτηση Ρινογαστρικού Σωλήνα Levin"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Αλλαγή – Τοποθέτηση Ρινογαστρικού Σωλήνα Levin
+              </div>
+            </div>
+          </a>
+          <a href="service-flevokentisi.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Φλεβοκέντηση (Τοποθέτηση Περιφερειακού Φλεβοκαθετήρα).webp"
+                alt="Φλεβοκέντηση"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Φλεβοκέντηση (Τοποθέτηση Περιφερειακού Φλεβοκαθετήρα)
+              </div>
+            </div>
+          </a>
+          <a href="service-endoflevia-oros.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Ενδοφλέβια Χορήγηση Ορού – Αντιβιώσεων.webp"
+                alt="Ενδοφλέβια Χορήγηση Ορού – Αντιβιώσεων"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Ενδοφλέβια Χορήγηση Ορού – Αντιβιώσεων
+              </div>
+            </div>
+          </a>
+          <a href="service-endoflevia-port.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Ενδοφλέβια Χορήγηση μέσω Port.webp"
+                alt="Ενδοφλέβια Χορήγηση μέσω Port"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Ενδοφλέβια Χορήγηση μέσω Port</div>
+            </div>
+          </a>
+          <a href="service-enteriki-sitisi.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Χορήγηση Εντερικής – Παρεντερικής Σίτισης.webp"
+                alt="Χορήγηση Εντερικής – Παρεντερικής Σίτισης"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Χορήγηση Εντερικής – Παρεντερικής Σίτισης
+              </div>
+            </div>
+          </a>
+          <a href="service-katakliseis.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Περιποίηση και Θεραπεία Κατακλίσεων – Ελκών.webp"
+                alt="Περιποίηση και Θεραπεία Κατακλίσεων – Ελκών"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Περιποίηση και Θεραπεία Κατακλίσεων – Ελκών
+              </div>
+            </div>
+          </a>
+          <a href="service-traumata.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Αλλαγή Τραυμάτων – Εγκαυμάτων.webp"
+                alt="Αλλαγή Τραυμάτων – Εγκαυμάτων"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Αλλαγή Τραυμάτων – Εγκαυμάτων</div>
+            </div>
+          </a>
+          <a href="service-rammata.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Κοπή Ραμμάτων (Μεταλλικών – Υφασμάτινων).webp"
+                alt="Κοπή Ραμμάτων"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Κοπή Ραμμάτων (Μεταλλικών – Υφασμάτινων)
+              </div>
+            </div>
+          </a>
+          <a href="service-eileostomia.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Φροντίδα και Αλλαγή Ειλεοστομίας – Κολοστομίας – Ουρητηροστομίας – Νηστιδοστομίας.webp"
+                alt="Φροντίδα και Αλλαγή Ειλεοστομίας – Κολοστομίας"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Φροντίδα και Αλλαγή Ειλεοστομίας – Κολοστομίας – Ουρητηροστομίας
+                – Νηστιδοστομίας
+              </div>
+            </div>
+          </a>
+          <a href="service-ypokysmos.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Υποκλυσμός, Χαμηλός – Υψηλός.webp"
+                alt="Υποκλυσμός, Χαμηλός – Υψηλός"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Υποκλυσμός, Χαμηλός – Υψηλός</div>
+            </div>
+          </a>
+          <a href="service-dialeippon-katheterismos.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Διαλείπων Καθετηριασμός.webp"
+                alt="Διαλείπων Καθετηριασμός"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Διαλείπων Καθετηριασμός</div>
+            </div>
+          </a>
+          <a href="service-atomiki-ygieini.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Ατομική Υγιεινή (Κλίνηρη Ασθενή).webp"
+                alt="Ατομική Υγιεινή (Κλίνηρη Ασθενή)"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Ατομική Υγιεινή (Κλίνηρη Ασθενή)</div>
+            </div>
+          </a>
+          <a href="service-banio-klinis.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Μπάνιο επί κλίνης.webp"
+                alt="Μπάνιο επί κλίνης"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Μπάνιο επί κλίνης</div>
+            </div>
+          </a>
+          <a href="service-banio-wc.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Μπάνιο στο WC.webp"
+                alt="Μπάνιο στο WC"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Μπάνιο στο WC</div>
+            </div>
+          </a>
+          <a href="service-kathariotita-pana.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Σωματική Καθαριότητα και Αλλαγή Πάνας.webp"
+                alt="Σωματική Καθαριότητα και Αλλαγή Πάνας"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Σωματική Καθαριότητα και Αλλαγή Πάνας
+              </div>
+            </div>
+          </a>
+          <a href="service-paketa-ygieinis.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Μηνιαία Πακέτα Ατομικής Υγιεινής.webp"
+                alt="Μηνιαία Πακέτα Ατομικής Υγιεινής"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Μηνιαία Πακέτα Ατομικής Υγιεινής</div>
+            </div>
+          </a>
+          <a href="service-episkepsi-nosilevti.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Επίσκεψη Εξειδικευμένου Νοσηλευτή.webp"
+                alt="Επίσκεψη Εξειδικευμένου Νοσηλευτή"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">Επίσκεψη Εξειδικευμένου Νοσηλευτή</div>
+            </div>
+          </a>
+          <a href="service-sakcharo-insulini.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Μέτρηση Σακχάρου και Χορήγηση Ινσουλίνης.webp"
+                alt="Μέτρηση Σακχάρου και Χορήγηση Ινσουλίνης"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Μέτρηση Σακχάρου και Χορήγηση Ινσουλίνης
+              </div>
+            </div>
+          </a>
+          <a href="service-zotika-simeia.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Παρακολούθηση και Καταγραφή των Ζωτικών Σημείων.webp"
+                alt="Παρακολούθηση και Καταγραφή των Ζωτικών Σημείων"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Παρακολούθηση και Καταγραφή των Ζωτικών Σημείων
+              </div>
+            </div>
+          </a>
+          <a href="service-oxygonotherapia.html" class="service-card">
+            <div class="service-card-image-wrapper">
+              <img
+                src="images/Οξυγονοθεραπεία – Χορήγηση με Νεφελοποιητή.webp"
+                alt="Οξυγονοθεραπεία – Χορήγηση με Νεφελοποιητή"
+                class="service-card-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-name">
+                Οξυγονοθεραπεία – Χορήγηση με Νεφελοποιητή
+              </div>
+            </div>
+          </a>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="contact.html" class="services-cta">
+            Επικοινωνήστε μαζί μας
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us-section" id="why-us">
+      <div class="container">
+        <h2 class="services-title">Γιατί να Επιλέξετε Εμάς</h2>
+        <p class="services-subtitle">Η εμπιστοσύνη σας είναι η δέσμευσή μας</p>
+        <div class="why-us-grid">
+          <div class="why-us-card">
+            <svg class="why-us-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <h3>Πιστοποιημένοι Νοσηλευτές</h3>
+            <p>Εξειδικευμένο προσωπικό με πιστοποιήσεις και εμπειρία στην κατ' οίκον φροντίδα</p>
+          </div>
+          <div class="why-us-card">
+            <svg class="why-us-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            <h3>24/7 Διαθεσιμότητα</h3>
+            <p>Είμαστε δίπλα σας κάθε στιγμή, 7 ημέρες την εβδομάδα, όλο το 24ωρο</p>
+          </div>
+          <div class="why-us-card">
+            <svg class="why-us-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            <h3>Ταχεία Ανταπόκριση</h3>
+            <p>Άμεση εξυπηρέτηση στον χώρο σας, χωρίς καθυστερήσεις και αναμονές</p>
+          </div>
+          <div class="why-us-card">
+            <svg class="why-us-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <h3>Όλη η Θεσσαλονίκη</h3>
+            <p>Καλύπτουμε ολόκληρο τον νομό Θεσσαλονίκης και την ευρύτερη περιοχή</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+      <div class="container">
+        <h2 class="services-title">Πώς Λειτουργεί</h2>
+        <p class="services-subtitle">Τρία απλά βήματα για να λάβετε φροντίδα στο σπίτι σας</p>
+        <div class="how-it-works-grid">
+          <div class="how-step">
+            <div class="how-step-number">1</div>
+            <h3>Τηλεφωνήστε μας</h3>
+            <p>Καλέστε στο +30 693 731 0198 και περιγράψτε τις ανάγκες υγείας σας</p>
+          </div>
+          <div class="how-step">
+            <div class="how-step-number">2</div>
+            <h3>Προγραμματισμός</h3>
+            <p>Κανονίζουμε μαζί την ημέρα και ώρα που σας βολεύει για την επίσκεψη</p>
+          </div>
+          <div class="how-step">
+            <div class="how-step-number">3</div>
+            <h3>Εξειδικευμένη Φροντίδα</h3>
+            <p>Ο πιστοποιημένος νοσηλευτής μας παρέχει την απαιτούμενη φροντίδα στο σπίτι σας</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <h2 class="services-title">Συχνές Ερωτήσεις</h2>
+        <p class="services-subtitle">Απαντήσεις στα περισσότερα ερωτήματα</p>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Ποιες υπηρεσίες προσφέρετε;</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              Προσφέρουμε ολοκληρωμένες υπηρεσίες κατ' οίκον φροντίδας, συμπεριλαμβανομένης της αιμοληψίας, ενέσεων, φλεβοκέντησης, καταμέτρησης ζωτικών σημείων και πολλών άλλων ιατρικών υπηρεσιών.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Πόσο γρήγορα μπορείτε να έρθετε;</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              Στις περισσότερες περιπτώσεις, μπορούμε να έρθουμε το ίδιο ημερολογιακό 24ωρο. Για επείγοντα περιστατικά, προσπαθούμε να παρέχουμε άμεση εξυπηρέτηση. Επικοινωνήστε μαζί μας για να συζητήσετε το χρονοδιάγραμμα.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Είναι ασφαλείς και πιστοποιημένοι οι νοσηλευτές σας;</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              Ναι, όλοι οι νοσηλευτές μας είναι πλήρως πιστοποιημένοι, εξειδικευμένοι και έχουν εκτεταμένη εμπειρία στην κατ' οίκον φροντίδα. Ακολουθούν αυστηρά πρωτόκολλα υγιεινής και ασφαλείας.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Καλύπτετε όλη τη Θεσσαλονίκη;</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              Καλύπτουμε ολόκληρο τον νομό Θεσσαλονίκης και τις περισσότερες περιοχές της ευρύτερης περιοχής. Επικοινωνήστε μαζί μας για να επιβεβαιώσετε ότι καλύπτουμε τη δική σας περιοχή.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Πόσο κοστίζουν οι υπηρεσίες σας;</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              Τα κόστη ποικίλλουν ανάλογα με τον τύπο και τη συχνότητα της υπηρεσίας. Προσφέρουμε διάφορα πακέτα φροντίδας. Επικοινωνήστε μαζί μας για να λάβετε μια δωρεάν εκτίμηση.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p><strong>Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία Θεσσαλονίκη</strong></p>
+        <p>Τηλέφωνο: <a href="tel:+306937310198">+30 693 731 0198</a></p>
+        <p style="margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;">
+          © 2024 Εὖ Ζῆν. Όλα τα δικαιώματα διατηρούνται. | <a href="privacy.html">Πολιτική Απορρήτου</a> | <a href="terms.html">Όροι Χρήσης</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Navigation
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+      const mobileNavClose = document.getElementById('mobileNavClose');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+      function toggleMobileNav() {
+        mobileNav.classList.toggle('active');
+        mobileNavOverlay.classList.toggle('active');
+      }
+
+      menuToggle.addEventListener('click', toggleMobileNav);
+      mobileNavClose.addEventListener('click', toggleMobileNav);
+      mobileNavOverlay.addEventListener('click', toggleMobileNav);
+
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileNav.classList.remove('active');
+          mobileNavOverlay.classList.remove('active');
+        });
+      });
+
+      // FAQ Accordion
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+            }
+          });
+          item.classList.toggle('active');
+        });
+      });
+    </script>
+  </body>
+</html>

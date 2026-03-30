@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Pages -->
+    <url>
+        <loc>https://evzin-homecare.gr/</loc>
+        <lastmod>2026-03-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://evzin-homecare.gr/services.html</loc>
+        <lastmod>2026-03-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://evzin-homecare.gr/articles.html</loc>
+        <lastmod>2026-03-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://evzin-homecare.gr/contact.html</loc>
+        <lastmod>2026-03-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Service Pages (26) -->
+    <url><loc>https://evzin-homecare.gr/service-aimolepsia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-exetaseis-ouron.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-enesi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-emvoliasmos.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-anarofisi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-ourokathitiras-foley.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-rinogastrikos-levin.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-flevokentisi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-endoflevia-oros.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-endoflevia-port.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-enteriki-sitisi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-katakliseis.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-traumata.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-rammata.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-eileostomia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-ypokysmos.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-dialeippon-katheterismos.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-atomiki-ygieini.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-banio-klinis.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-banio-wc.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-kathariotita-pana.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-paketa-ygieinis.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-episkepsi-nosilevti.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-sakcharo-insulini.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-zotika-simeia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzin-homecare.gr/service-oxygonotherapia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- Article Pages (26) -->
+    <url><loc>https://evzin-homecare.gr/article-levin.html</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-aimolepsia.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-katakliseis.html</loc><lastmod>2026-03-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-flevokentisi.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-oxygono.html</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-exetaseis-ouron.html</loc><lastmod>2026-02-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-enesi.html</loc><lastmod>2026-02-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-emvoliasmos.html</loc><lastmod>2026-01-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-anarofisi.html</loc><lastmod>2026-01-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-ourokathitiras.html</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-endoflevia-orou.html</loc><lastmod>2026-01-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-endoflevia-port.html</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-enteriki-sitisi.html</loc><lastmod>2025-12-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-traumata.html</loc><lastmod>2025-12-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-rammata.html</loc><lastmod>2025-12-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-eileostomia.html</loc><lastmod>2025-12-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-ypokysmos.html</loc><lastmod>2025-11-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-dialeippon-katheterismos.html</loc><lastmod>2025-11-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-atomiki-ygieini.html</loc><lastmod>2025-11-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-banio-klinis.html</loc><lastmod>2025-11-06</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-banio-wc.html</loc><lastmod>2025-10-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-pana.html</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-paketa-ygieinis.html</loc><lastmod>2025-10-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-episkepsi-nosilevti.html</loc><lastmod>2025-10-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-saccharo-insulini.html</loc><lastmod>2025-10-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/article-zotika-simeia.html</loc><lastmod>2025-09-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+    <!-- Area Pages (10) -->
+    <url><loc>https://evzin-homecare.gr/area-kalamaria.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-pylaia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-evosmos.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-stavroupoli.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-toumpa.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-thermi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-ampelokipoi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-panorama.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-neapoli.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-kentro.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-sykies.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-polichni.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-kordelio.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-menemeni.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-oraiokastro.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-efkarpia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-epanomi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-michaniona.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-peraia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-lagkadas.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-chalkidona.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-ano-poli.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-triandria.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-chortiatis.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzin-homecare.gr/area-filyro.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+    <!-- Legal Pages -->
+    <url><loc>https://evzin-homecare.gr/privacy.html</loc><lastmod>2026-03-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+    <url><loc>https://evzin-homecare.gr/terms.html</loc><lastmod>2026-03-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Χάρτης Κάλυψης Θεσσαλονίκη | Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία</title>
+    <meta name="description" content="Χάρτης περιοχών κάλυψης κατ' οίκον νοσηλείας στη Θεσσαλονίκη. Εξυπηρετούμε όλο τον νομό Θεσσαλονίκης – Κέντρο, Καλαμαριά, Αμπελόκηποι, Εύοσμος, Πανόραμα, Πυλαία, Σταυρούπολη, Νεάπολη, Θέρμη, Τούμπα και περισσότερες περιοχές.">
+    <link rel="canonical" href="https://evzin-homecare.gr/map.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evzin-homecare.gr/map.html">
+    <meta property="og:title" content="Χάρτης Κάλυψης Θεσσαλονίκη | Εὖ Ζῆν">
+    <meta property="og:description" content="Δείτε τις περιοχές κατ' οίκον νοσηλείας που εξυπηρετούμε στη Θεσσαλονίκη.">
+    <meta property="og:image" content="https://evzin-homecare.gr/euzin-logo.png">
+    <meta property="og:locale" content="el_GR">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+    <link rel="stylesheet" href="shared.css">
+    <style>
+      :root {
+        --color-cream: #faf8f3;
+        --color-sage: #9ca89e;
+        --color-warm-gray: #6b6b6b;
+        --color-terracotta: #bf9d5f;
+        --color-warm-accent: #d4b878;
+        --color-off-white: #f5f3f0;
+        --color-dark: #2d2d2d;
+        --font-serif: 'Lora', serif;
+        --font-sans: 'Source Sans Pro', sans-serif;
+        --transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-sans, 'Source Sans Pro', sans-serif); min-height: 100vh; background: rgba(200, 132, 90, 0.06); color: var(--color-dark, #2d2d2d); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        header { background: linear-gradient(135deg, rgba(250, 248, 243, 0.98) 0%, rgba(245, 243, 240, 0.98) 100%); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(200, 132, 90, 0.1); box-shadow: none; position: sticky; top: 0; z-index: 1000; }
+        .header-content { display: flex; align-items: center; justify-content: space-between; }
+        .header-logo { height: 50px; }
+        .header-nav { display: flex; gap: 2.5rem; }
+        .nav-link { color: var(--color-dark, #2d2d2d); text-decoration: none; font-weight: 500; font-size: 0.95rem; padding: 0.5rem 0;  transition: background 0.2s, color 0.2s; }
+        .nav-link:hover { color: var(--color-terracotta, #bf9d5f); }
+        .call-btn { display: flex; align-items: center; gap: 0.5rem; background: var(--color-terracotta, #bf9d5f); color: white; padding: 0.5rem 1rem; border-radius: 9999px; text-decoration: none; font-weight: 500; transition: background 0.3s; }
+        .call-btn:hover { background: #a8894f; }
+        .call-btn svg { width: 16px; height: 16px; }
+        .call-btn span { display: none; }
+        @media (min-width: 640px) { .call-btn span { display: inline; } }
+
+        .page-hero { background: linear-gradient(135deg, #2d2d2d 0%, #4a4a4a 50%, #3a3a3a 100%); color: white; padding: 3rem 1rem 2.5rem; text-align: center; }
+        .page-hero h1 { font-size: 1.75rem; font-family: var(--font-serif, 'Lora', serif); font-weight: 700; margin-bottom: 0.75rem; }
+        .page-hero p { color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 700px; margin: 0 auto; }
+        @media (min-width: 768px) { .page-hero h1 { font-size: 2.25rem; } }
+
+        .map-section { padding: 2rem 1rem 3rem; }
+        #map { width: 100%; height: 580px; border-radius: 1.25rem; box-shadow: 0 8px 30px rgba(0,0,0,0.12); border: 1px solid rgba(200, 132, 90, 0.1); z-index: 1; }
+
+        .areas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; max-width: 1000px; margin: 2rem auto 0; }
+        .area-link { display: block; background: white; border: 1px solid rgba(200, 132, 90, 0.15); border-radius: 0.75rem; padding: 0.85rem 1rem; text-decoration: none; color: var(--color-dark, #2d2d2d); font-weight: 500; font-size: 0.95rem; transition: all 0.2s; text-align: center; }
+        .area-link:hover { background: rgba(200, 132, 90, 0.1); border-color: var(--color-terracotta, #bf9d5f); transform: translateY(-2px); box-shadow: 0 4px 8px rgba(200, 132, 90,0.15); }
+
+        .section-title { font-size: 1.4rem; font-family: var(--font-serif, 'Lora', serif); font-weight: 700; color: var(--color-dark, #2d2d2d); margin-bottom: 0.5rem; }
+        .section-sub { color: var(--color-warm-gray, #6b6b6b); margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+        footer { background: var(--color-dark, #2d2d2d); color: white; padding: 3rem 0; text-align: center; }
+        .footer-logo { height: 40px; filter: brightness(0) invert(1); opacity: 0.9; margin-bottom: 1rem; }
+        .footer-tagline { color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; }
+        .footer-copyright { color: rgba(255,255,255,0.5); font-size: 0.875rem; }
+        .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin: 1rem 0; }
+        .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.875rem; transition: color 0.3s; }
+        .footer-links a:hover { color: white; text-decoration: underline; }
+
+        /* Leaflet popup custom style */
+        .leaflet-popup-content-wrapper { border-radius: 0.75rem; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border: 1px solid rgba(200, 132, 90, 0.1); }
+        .popup-inner { padding: 0.25rem; }
+        .popup-inner h3 { font-size: 1rem; font-weight: 700; color: var(--color-dark, #2d2d2d); margin-bottom: 0.25rem; }
+        .popup-inner p { font-size: 0.85rem; color: var(--color-warm-gray, #6b6b6b); margin-bottom: 0.5rem; }
+        .popup-inner a { display: inline-block; background: var(--color-terracotta, #bf9d5f); color: white; font-size: 0.8rem; font-weight: 600; padding: 0.35rem 0.85rem; border-radius: 9999px; text-decoration: none; }
+        .popup-inner a:hover { background: #a8894f; }
+    </style>
+<link rel="stylesheet" href="modern.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html"><img src="euzin-logo.png" alt="Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία" class="header-logo"></a>
+            <nav class="header-nav">
+                <a href="services.html" class="nav-link">Υπηρεσίες</a>
+                <a href="articles.html" class="nav-link">Άρθρα</a>
+                <a href="contact.html" class="nav-link">Επικοινωνία</a>
+            </nav>
+            <a href="tel:+306937310198" class="call-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Καλέστε μας</span>
+            </a>
+            <button class="menu-toggle" aria-label="Μενού">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay"></div>
+    <nav class="mobile-nav">
+        <div class="mobile-nav-header">
+            <img src="euzin-logo.png" alt="Εὖ Ζῆν">
+            <button class="mobile-nav-close" aria-label="Κλείσιμο">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="index.html">Αρχική</a>
+            <a href="services.html">Υπηρεσίες</a>
+            <a href="articles.html">Άρθρα</a>
+            <a href="contact.html">Επικοινωνία</a>
+        </div>
+        <div class="mobile-nav-cta">
+            <a href="tel:+306937310198">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                Καλέστε μας
+            </a>
+        </div>
+    </nav>
+
+    <div class="page-hero">
+        <h1>Χάρτης Περιοχών Κάλυψης</h1>
+        <p>Κατ' οίκον νοσηλεία σε ολόκληρο τον νομό Θεσσαλονίκης – Εξυπηρετούμε όλες τις περιοχές 7 ημέρες την εβδομάδα</p>
+    </div>
+
+    <div class="map-section container">
+        <div id="map"></div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <h2 class="section-title">Περιοχές που Εξυπηρετούμε</h2>
+            <p class="section-sub">Επιλέξτε την περιοχή σας για πληροφορίες κατ' οίκον νοσηλείας</p>
+            <div class="areas-grid">
+                <a href="area-kentro.html" class="area-link">Κέντρο Θεσσαλονίκης</a>
+                <a href="area-kalamaria.html" class="area-link">Καλαμαριά</a>
+                <a href="area-ampelokipoi.html" class="area-link">Αμπελόκηποι</a>
+                <a href="area-evosmos.html" class="area-link">Εύοσμος</a>
+                <a href="area-stavroupoli.html" class="area-link">Σταυρούπολη</a>
+                <a href="area-neapoli.html" class="area-link">Νεάπολη</a>
+                <a href="area-toumpa.html" class="area-link">Τούμπα</a>
+                <a href="area-panorama.html" class="area-link">Πανόραμα</a>
+                <a href="area-pylaia.html" class="area-link">Πυλαία</a>
+                <a href="area-thermi.html" class="area-link">Θέρμη</a>
+                <a href="#" class="area-link">Συκιές</a>
+                <a href="#" class="area-link">Πολίχνη</a>
+                <a href="#" class="area-link">Κορδελιό</a>
+                <a href="#" class="area-link">Μενεμένη</a>
+                <a href="#" class="area-link">Ωραιόκαστρο</a>
+                <a href="#" class="area-link">Ευκαρπία</a>
+                <a href="#" class="area-link">Επανομή</a>
+                <a href="#" class="area-link">Μηχανιώνα</a>
+                <a href="#" class="area-link">Περαία</a>
+                <a href="#" class="area-link">Λαγκαδάς</a>
+                <a href="#" class="area-link">Χαλκηδόνα</a>
+                <a href="#" class="area-link">Άνω Πόλη</a>
+                <a href="#" class="area-link">Τριανδρία</a>
+                <a href="#" class="area-link">Χορτιάτης</a>
+                <a href="#" class="area-link">Φίλυρο</a>
+                <a href="#" class="area-link">Ελευθέριο</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <img src="euzin-logo.png" alt="Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία" class="footer-logo">
+            <p class="footer-tagline">Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία</p>
+            <div class="footer-links">
+                <a href="terms.html">Όροι Χρήσης</a>
+                <a href="privacy.html">Πολιτική Απορρήτου</a>
+            </div>
+            <p class="footer-copyright">© 2026 Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία — Όλα τα δικαιώματα κατοχυρωμένα</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="shared.js"></script>
+    <script>
+        // Initialize map centered on Thessaloniki prefecture
+        const map = L.map('map', {
+            center: [40.72, 22.98],
+            zoom: 10,
+            zoomControl: true,
+            scrollWheelZoom: true
+        });
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Νομός Θεσσαλονίκης – approximate prefecture boundary polyline
+        const prefBoundary = [
+            [40.82, 22.32],
+            [41.00, 22.37],
+            [41.08, 22.58],
+            [41.15, 22.82],
+            [41.18, 23.08],
+            [41.08, 23.30],
+            [40.95, 23.52],
+            [40.75, 23.58],
+            [40.58, 23.52],
+            [40.48, 23.30],
+            [40.40, 23.10],
+            [40.38, 22.95],
+            [40.42, 22.72],
+            [40.52, 22.52],
+            [40.62, 22.38],
+            [40.82, 22.32]
+        ];
+
+        L.polygon(prefBoundary, {
+            color: '#bf9d5f',
+            weight: 2.5,
+            opacity: 0.75,
+            fillColor: '#bf9d5f',
+            fillOpacity: 0.07,
+            dashArray: '8, 5'
+        }).addTo(map);
+
+        // All service areas
+        const serviceAreas = [
+            { name: 'Κέντρο', lat: 40.6355, lng: 22.9400, url: 'area-kentro.html', desc: 'Κατ\'οίκον νοσηλεία στο κέντρο της Θεσσαλονίκης' },
+            { name: 'Καλαμαριά', lat: 40.5870, lng: 22.9557, url: 'area-kalamaria.html', desc: 'Κατ\'οίκον νοσηλεία στην Καλαμαριά' },
+            { name: 'Αμπελόκηποι', lat: 40.6440, lng: 22.9105, url: 'area-ampelokipoi.html', desc: 'Κατ\'οίκον νοσηλεία στους Αμπελόκηπους' },
+            { name: 'Εύοσμος', lat: 40.6646, lng: 22.8958, url: 'area-evosmos.html', desc: 'Κατ\'οίκον νοσηλεία στον Εύοσμο' },
+            { name: 'Σταυρούπολη', lat: 40.6730, lng: 22.9065, url: 'area-stavroupoli.html', desc: 'Κατ\'οίκον νοσηλεία στη Σταυρούπολη' },
+            { name: 'Νεάπολη', lat: 40.6645, lng: 22.9370, url: 'area-neapoli.html', desc: 'Κατ\'οίκον νοσηλεία στη Νεάπολη' },
+            { name: 'Τούμπα', lat: 40.6120, lng: 22.9558, url: 'area-toumpa.html', desc: 'Κατ\'οίκον νοσηλεία στην Τούμπα' },
+            { name: 'Πανόραμα', lat: 40.6040, lng: 23.0115, url: 'area-panorama.html', desc: 'Κατ\'οίκον νοσηλεία στο Πανόραμα' },
+            { name: 'Πυλαία', lat: 40.5789, lng: 22.9897, url: 'area-pylaia.html', desc: 'Κατ\'οίκον νοσηλεία στην Πυλαία' },
+            { name: 'Θέρμη', lat: 40.5467, lng: 23.0224, url: 'area-thermi.html', desc: 'Κατ\'οίκον νοσηλεία στη Θέρμη' },
+            { name: 'Συκιές', lat: 40.6720, lng: 22.9500, url: null, desc: 'Κατ\'οίκον νοσηλεία στις Συκιές' },
+            { name: 'Πολίχνη', lat: 40.6880, lng: 22.9360, url: null, desc: 'Κατ\'οίκον νοσηλεία στην Πολίχνη' },
+            { name: 'Κορδελιό', lat: 40.6680, lng: 22.8860, url: null, desc: 'Κατ\'οίκον νοσηλεία στο Κορδελιό' },
+            { name: 'Μενεμένη', lat: 40.6760, lng: 22.8690, url: null, desc: 'Κατ\'οίκον νοσηλεία στη Μενεμένη' },
+            { name: 'Ωραιόκαστρο', lat: 40.7260, lng: 22.9060, url: null, desc: 'Κατ\'οίκον νοσηλεία στο Ωραιόκαστρο' },
+            { name: 'Ευκαρπία', lat: 40.6950, lng: 22.9180, url: null, desc: 'Κατ\'οίκον νοσηλεία στην Ευκαρπία' },
+            { name: 'Επανομή', lat: 40.4260, lng: 22.9100, url: null, desc: 'Κατ\'οίκον νοσηλεία στην Επανομή' },
+            { name: 'Μηχανιώνα', lat: 40.4680, lng: 22.8630, url: null, desc: 'Κατ\'οίκον νοσηλεία στη Μηχανιώνα' },
+            { name: 'Περαία', lat: 40.4980, lng: 22.9360, url: null, desc: 'Κατ\'οίκον νοσηλεία στην Περαία' },
+            { name: 'Λαγκαδάς', lat: 40.7490, lng: 23.0680, url: null, desc: 'Κατ\'οίκον νοσηλεία στον Λαγκαδά' },
+            { name: 'Χαλκηδόνα', lat: 40.8090, lng: 22.5770, url: null, desc: 'Κατ\'οίκον νοσηλεία στη Χαλκηδόνα' },
+            { name: 'Άνω Πόλη', lat: 40.6420, lng: 22.9500, url: null, desc: 'Κατ\'οίκον νοσηλεία στην Άνω Πόλη' },
+            { name: 'Τριανδρία', lat: 40.6200, lng: 22.9680, url: null, desc: 'Κατ\'οίκον νοσηλεία στην Τριανδρία' },
+            { name: 'Χορτιάτης', lat: 40.6150, lng: 23.0500, url: null, desc: 'Κατ\'οίκον νοσηλεία στον Χορτιάτη' },
+            { name: 'Φίλυρο', lat: 40.6530, lng: 23.0270, url: null, desc: 'Κατ\'οίκον νοσηλεία στο Φίλυρο' },
+            { name: 'Ελευθέριο', lat: 40.6990, lng: 22.8470, url: null, desc: 'Κατ\'οίκον νοσηλεία στο Ελευθέριο' }
+        ];
+
+        function createMarkerIcon(color) {
+            return L.divIcon({
+                className: '',
+                html: `<div style="width:30px;height:30px;background:${color};border:3px solid white;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.25);display:flex;align-items:center;justify-content:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </div>`,
+                iconSize: [30, 30],
+                iconAnchor: [15, 30],
+                popupAnchor: [0, -30]
+            });
+        }
+
+        serviceAreas.forEach(area => {
+            const marker = L.marker([area.lat, area.lng], {
+                icon: createMarkerIcon('#bf9d5f')
+            }).addTo(map);
+
+            const linkHtml = area.url
+                ? `<a href="${area.url}">Περισσότερα &rarr;</a>`
+                : `<a href="tel:+306937310198">Καλέστε μας &rarr;</a>`;
+
+            marker.bindPopup(`
+                <div class="popup-inner">
+                    <h3>${area.name}</h3>
+                    <p>${area.desc}</p>
+                    ${linkHtml}
+                </div>
+            `, { maxWidth: 220 });
+        });
+    </script>
+</body>
+
+</html>

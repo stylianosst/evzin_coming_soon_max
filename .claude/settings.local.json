@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for file:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/styli/Documents/Projects/evzin_coming_soon/**)",
+      "Bash(done)",
+      "Bash(node -e \":*)",
+      "Bash(wc -l \"c:/Users/styli/Downloads/gr \\(1\\).json\")",
+      "Bash(grep -l \"modern.css\" *.html)"
+    ]
+  }
+}
