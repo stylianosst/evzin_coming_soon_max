@@ -8,108 +8,108 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://evzinhomecare.gr/services.html</loc>
+        <loc>https://evzinhomecare.gr/services</loc>
         <lastmod>2026-03-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://evzinhomecare.gr/articles.html</loc>
+        <loc>https://evzinhomecare.gr/articles</loc>
         <lastmod>2026-03-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://evzinhomecare.gr/contact.html</loc>
+        <loc>https://evzinhomecare.gr/contact</loc>
         <lastmod>2026-03-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <!-- Service Pages (26) -->
-    <url><loc>https://evzinhomecare.gr/service-aimolepsia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-exetaseis-ouron.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-enesi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-emvoliasmos.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-anarofisi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-ourokathitiras-foley.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-rinogastrikos-levin.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-flevokentisi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-endoflevia-oros.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-endoflevia-port.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-enteriki-sitisi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-katakliseis.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-traumata.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-rammata.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-eileostomia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-ypokysmos.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-dialeippon-katheterismos.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-atomiki-ygieini.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-banio-klinis.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-banio-wc.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-kathariotita-pana.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-paketa-ygieinis.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-episkepsi-nosilevti.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-sakcharo-insulini.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-zotika-simeia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://evzinhomecare.gr/service-oxygonotherapia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-aimolepsia</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-exetaseis-ouron</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-enesi</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-emvoliasmos</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-anarofisi</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-ourokathitiras-foley</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-rinogastrikos-levin</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-flevokentisi</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-endoflevia-oros</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-endoflevia-port</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-enteriki-sitisi</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-katakliseis</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-traumata</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-rammata</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-eileostomia</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-ypokysmos</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-dialeippon-katheterismos</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-atomiki-ygieini</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-banio-klinis</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-banio-wc</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-kathariotita-pana</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-paketa-ygieinis</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-episkepsi-nosilevti</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-sakcharo-insulini</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-zotika-simeia</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://evzinhomecare.gr/service-oxygonotherapia</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
     <!-- Article Pages (26) -->
-    <url><loc>https://evzinhomecare.gr/article-levin.html</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-aimolepsia.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-katakliseis.html</loc><lastmod>2026-03-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-flevokentisi.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-oxygono.html</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-exetaseis-ouron.html</loc><lastmod>2026-02-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-enesi.html</loc><lastmod>2026-02-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-emvoliasmos.html</loc><lastmod>2026-01-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-anarofisi.html</loc><lastmod>2026-01-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-ourokathitiras.html</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-endoflevia-orou.html</loc><lastmod>2026-01-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-endoflevia-port.html</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-enteriki-sitisi.html</loc><lastmod>2025-12-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-traumata.html</loc><lastmod>2025-12-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-rammata.html</loc><lastmod>2025-12-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-eileostomia.html</loc><lastmod>2025-12-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-ypokysmos.html</loc><lastmod>2025-11-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-dialeippon-katheterismos.html</loc><lastmod>2025-11-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-atomiki-ygieini.html</loc><lastmod>2025-11-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-banio-klinis.html</loc><lastmod>2025-11-06</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-banio-wc.html</loc><lastmod>2025-10-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-pana.html</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-paketa-ygieinis.html</loc><lastmod>2025-10-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-episkepsi-nosilevti.html</loc><lastmod>2025-10-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-saccharo-insulini.html</loc><lastmod>2025-10-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/article-zotika-simeia.html</loc><lastmod>2025-09-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-levin</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-aimolepsia</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-katakliseis</loc><lastmod>2026-03-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-flevokentisi</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-oxygono</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-exetaseis-ouron</loc><lastmod>2026-02-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-enesi</loc><lastmod>2026-02-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-emvoliasmos</loc><lastmod>2026-01-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-anarofisi</loc><lastmod>2026-01-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-ourokathitiras</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-endoflevia-orou</loc><lastmod>2026-01-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-endoflevia-port</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-enteriki-sitisi</loc><lastmod>2025-12-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-traumata</loc><lastmod>2025-12-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-rammata</loc><lastmod>2025-12-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-eileostomia</loc><lastmod>2025-12-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-ypokysmos</loc><lastmod>2025-11-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-dialeippon-katheterismos</loc><lastmod>2025-11-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-atomiki-ygieini</loc><lastmod>2025-11-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-banio-klinis</loc><lastmod>2025-11-06</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-banio-wc</loc><lastmod>2025-10-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-pana</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-paketa-ygieinis</loc><lastmod>2025-10-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-episkepsi-nosilevti</loc><lastmod>2025-10-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-saccharo-insulini</loc><lastmod>2025-10-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/article-zotika-simeia</loc><lastmod>2025-09-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
     <!-- Area Pages (10) -->
-    <url><loc>https://evzinhomecare.gr/area-kalamaria.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-pylaia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-evosmos.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-stavroupoli.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-toumpa.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-thermi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-ampelokipoi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-panorama.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-neapoli.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-kentro.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-sykies.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-polichni.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-kordelio.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-menemeni.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-oraiokastro.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-efkarpia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-epanomi.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-michaniona.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-peraia.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-lagkadas.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-chalkidona.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-ano-poli.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-triandria.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-chortiatis.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://evzinhomecare.gr/area-filyro.html</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-kalamaria</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-pylaia</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-evosmos</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-stavroupoli</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-toumpa</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-thermi</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-ampelokipoi</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-panorama</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-neapoli</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-kentro</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-sykies</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-polichni</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-kordelio</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-menemeni</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-oraiokastro</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-efkarpia</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-epanomi</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-michaniona</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-peraia</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-lagkadas</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-chalkidona</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-ano-poli</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-triandria</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-chortiatis</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://evzinhomecare.gr/area-filyro</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
     <!-- Legal Pages -->
-    <url><loc>https://evzinhomecare.gr/privacy.html</loc><lastmod>2026-03-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-    <url><loc>https://evzinhomecare.gr/terms.html</loc><lastmod>2026-03-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+    <url><loc>https://evzinhomecare.gr/privacy</loc><lastmod>2026-03-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+    <url><loc>https://evzinhomecare.gr/terms</loc><lastmod>2026-03-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
