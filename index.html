@@ -10,10 +10,6 @@
       name="description"
       content="Φροντίδα υγείας στον χώρο σας με επαγγελματισμό και σεβασμό. 24/7 διαθεσιμότητα στη Θεσσαλονίκη."
     />
-    <meta
-      name="keywords"
-      content="κατ οίκον νοσηλεία Θεσσαλονίκη, νοσηλεία στο σπίτι, νοσηλευτής στο σπίτι Θεσσαλονίκη, κατ οίκον φροντίδα, 24/7 νοσηλεία, αιμοληψία στο σπίτι, φλεβοκέντηση κατ οίκον, ενέσεις στο σπίτι Θεσσαλονίκη"
-    />
     <link rel="canonical" href="https://evzinhomecare.gr/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://evzinhomecare.gr/" />
@@ -27,7 +23,7 @@
     />
     <meta
       property="og:image"
-      content="https://evzinhomecare.gr/euzin-logo.png"
+      content="https://evzinhomecare.gr/euzin-logo.webp"
     />
     <meta property="og:locale" content="el_GR" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -41,19 +37,23 @@
     />
     <meta
       name="twitter:image"
-      content="https://evzinhomecare.gr/euzin-logo.png"
+      content="https://evzinhomecare.gr/euzin-logo.webp"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+Pro:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" as="image" href="euzin-logo.webp" fetchpriority="high" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      crossorigin=""
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      />
+    </noscript>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -92,8 +92,8 @@
           "https://www.facebook.com/evzin.homecare/",
           "https://www.xo.gr/profile/profile-911747657/el/"
         ],
-        "logo": "https://evzinhomecare.gr/euzin-logo.png",
-        "image": "https://evzinhomecare.gr/euzin-logo.png"
+        "logo": "https://evzinhomecare.gr/euzin-logo.webp",
+        "image": "https://evzinhomecare.gr/euzin-logo.webp"
       }
     </script>
     <style>
@@ -168,6 +168,7 @@
 
       .header-logo {
         height: 50px;
+        width: auto;
         display: block;
         transition: var(--transition);
       }
@@ -323,6 +324,7 @@
 
       .mobile-nav-header img {
         height: 50px;
+        width: auto;
       }
 
       .mobile-nav-close {
@@ -417,6 +419,7 @@
       /* Hero Section */
       .hero-logo {
         height: 80px;
+        width: auto;
         display: block;
         margin: 0 auto 3rem;
         animation: fadeInUp 0.8s ease-out;
@@ -1100,9 +1103,11 @@
       <div class="container header-content">
         <a href="/">
           <img
-            src="euzin-logo.png"
+            src="euzin-logo.webp"
             alt="Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία"
             class="header-logo"
+            width="500"
+            height="500"
           />
         </a>
         <nav class="header-nav">
@@ -1148,7 +1153,7 @@
     <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
     <nav class="mobile-nav" id="mobileNav">
       <div class="mobile-nav-header">
-        <img src="euzin-logo.png" alt="Εὖ Ζῆν" />
+        <img src="euzin-logo.webp" alt="Εὖ Ζῆν" width="500" height="500" />
         <button
           class="mobile-nav-close"
           id="mobileNavClose"
@@ -1197,9 +1202,12 @@
     <!-- Main Content -->
     <main class="container">
       <img
-        src="euzin-logo.png"
+        src="euzin-logo.webp"
         alt="Εὖ Ζῆν – Κατ' Οίκον Νοσηλεία"
         class="hero-logo"
+        width="500"
+        height="500"
+        fetchpriority="high"
       />
 
       <h1>
@@ -1310,10 +1318,12 @@
           <a href="service-aimolepsia" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Αιμοληψία – Εξετάσεις Αίματος.webp"
-                alt="Αιμοληψία – Εξετάσεις Αίματος"
+                src="images/aimolepsia.webp"
+                alt="Αιμοληψία κατ' οίκον – εξετάσεις αίματος από νοσηλευτή"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1323,10 +1333,12 @@
           <a href="service-exetaseis-ouron" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Εξετάσεις Ούρων (Καλλιέργεια – Γενική Ούρων).webp"
-                alt="Εξετάσεις Ούρων"
+                src="images/exetaseis-ouron.webp"
+                alt="Εξετάσεις ούρων κατ' οίκον – γενική και καλλιέργεια"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1338,10 +1350,12 @@
           <a href="service-enesi" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Ένεση Υποδόρια – Ενδομυϊκή  Ένεση Εξωσωματικής.webp"
-                alt="Ένεση Υποδόρια – Ενδομυϊκή / Ένεση Εξωσωματικής"
+                src="images/enesi.webp"
+                alt="Ενδομυϊκή και υποδόρια ένεση κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1353,10 +1367,12 @@
           <a href="service-emvoliasmos" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Εμβολιασμός – Εμβόλιο Εποχικής Γρίπης.webp"
-                alt="Εμβολιασμός – Εμβόλιο Εποχικής Γρίπης"
+                src="images/emvoliasmos.webp"
+                alt="Εμβολιασμός κατ' οίκον – εμβόλιο εποχικής γρίπης"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1368,10 +1384,12 @@
           <a href="service-anarofisi" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Αναρρόφηση Τραχειοβρογχικών Εκκρίσεων.webp"
-                alt="Αναρρόφηση Τραχειοβρογχικών Εκκρίσεων"
+                src="images/anarofisi.webp"
+                alt="Αναρρόφηση τραχειοβρογχικών εκκρίσεων κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1383,10 +1401,12 @@
           <a href="service-ourokathitiras-foley" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Αλλαγή – Τοποθέτηση Ουροκαθετήρα Foley (Διουρηθρικός – Υπερηβικός).webp"
-                alt="Αλλαγή – Τοποθέτηση Ουροκαθετήρα Foley"
+                src="images/ourokathitiras-foley.webp"
+                alt="Τοποθέτηση ουροκαθετήρα Foley κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1399,10 +1419,12 @@
           <a href="service-rinogastrikos-levin" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Αλλαγή – Τοποθέτηση Ρινογαστρικού Σωλήνα Levin.webp"
-                alt="Αλλαγή – Τοποθέτηση Ρινογαστρικού Σωλήνα Levin"
+                src="images/rinogastrikos-levin.webp"
+                alt="Τοποθέτηση ρινογαστρικού σωλήνα Levin κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1414,10 +1436,12 @@
           <a href="service-flevokentisi" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Φλεβοκέντηση (Τοποθέτηση Περιφερειακού Φλεβοκαθετήρα).webp"
-                alt="Φλεβοκέντηση"
+                src="images/flevokentisi.webp"
+                alt="Φλεβοκέντηση κατ' οίκον – τοποθέτηση φλεβοκαθετήρα"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1429,10 +1453,12 @@
           <a href="service-endoflevia-oros" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Ενδοφλέβια Χορήγηση Ορού – Αντιβιώσεων.webp"
-                alt="Ενδοφλέβια Χορήγηση Ορού – Αντιβιώσεων"
+                src="images/endoflevia-oros.webp"
+                alt="Ενδοφλέβια χορήγηση ορού και αντιβιώσεων κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1444,10 +1470,12 @@
           <a href="service-endoflevia-port" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Ενδοφλέβια Χορήγηση μέσω Port.webp"
-                alt="Ενδοφλέβια Χορήγηση μέσω Port"
+                src="images/endoflevia-port.webp"
+                alt="Ενδοφλέβια χορήγηση μέσω Port κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1457,10 +1485,12 @@
           <a href="service-enteriki-sitisi" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Χορήγηση Εντερικής – Παρεντερικής Σίτισης.webp"
-                alt="Χορήγηση Εντερικής – Παρεντερικής Σίτισης"
+                src="images/enteriki-sitisi.webp"
+                alt="Εντερική και παρεντερική σίτιση κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1472,10 +1502,12 @@
           <a href="service-katakliseis" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Περιποίηση και Θεραπεία Κατακλίσεων – Ελκών.webp"
-                alt="Περιποίηση και Θεραπεία Κατακλίσεων – Ελκών"
+                src="images/katakliseis.webp"
+                alt="Περιποίηση και θεραπεία κατακλίσεων κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1487,10 +1519,12 @@
           <a href="service-traumata" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Αλλαγή Τραυμάτων – Εγκαυμάτων.webp"
-                alt="Αλλαγή Τραυμάτων – Εγκαυμάτων"
+                src="images/traumata.webp"
+                alt="Αλλαγή τραυμάτων και εγκαυμάτων κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1500,10 +1534,12 @@
           <a href="service-rammata" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Κοπή Ραμμάτων (Μεταλλικών – Υφασμάτινων).webp"
-                alt="Κοπή Ραμμάτων"
+                src="images/rammata.webp"
+                alt="Κοπή ραμμάτων κατ' οίκον – μεταλλικών και υφασμάτινων"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1515,10 +1551,12 @@
           <a href="service-eileostomia" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Φροντίδα και Αλλαγή Ειλεοστομίας – Κολοστομίας – Ουρητηροστομίας – Νηστιδοστομίας.webp"
-                alt="Φροντίδα και Αλλαγή Ειλεοστομίας – Κολοστομίας"
+                src="images/eileostomia.webp"
+                alt="Φροντίδα ειλεοστομίας και κολοστομίας κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1531,10 +1569,12 @@
           <a href="service-ypokysmos" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Υποκλυσμός, Χαμηλός – Υψηλός.webp"
-                alt="Υποκλυσμός, Χαμηλός – Υψηλός"
+                src="images/ypokysmos.webp"
+                alt="Υποκλυσμός κατ' οίκον – χαμηλός και υψηλός"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1544,10 +1584,12 @@
           <a href="service-dialeippon-katheterismos" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Διαλείπων Καθετηριασμός.webp"
-                alt="Διαλείπων Καθετηριασμός"
+                src="images/dialeippon-katheterismos.webp"
+                alt="Διαλείπων καθετηριασμός κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1557,10 +1599,12 @@
           <a href="service-atomiki-ygieini" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Ατομική Υγιεινή (Κλινήρη Ασθενή).webp"
-                alt="Ατομική Υγιεινή (Κλινήρη Ασθενή)"
+                src="images/atomiki-ygieini.webp"
+                alt="Ατομική υγιεινή κλινήρη ασθενή κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1570,10 +1614,12 @@
           <a href="service-banio-klinis" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Μπάνιο επί κλίνης.webp"
-                alt="Μπάνιο επί κλίνης"
+                src="images/banio-klinis.webp"
+                alt="Μπάνιο επί κλίνης κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1583,10 +1629,12 @@
           <a href="service-banio-wc" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Μπάνιο στο WC.webp"
-                alt="Μπάνιο στο WC"
+                src="images/banio-wc.webp"
+                alt="Μπάνιο στο WC με βοήθεια νοσηλευτή κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1596,10 +1644,12 @@
           <a href="service-kathariotita-pana" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Σωματική Καθαριότητα και Αλλαγή Πάνας.webp"
-                alt="Σωματική Καθαριότητα και Αλλαγή Πάνας"
+                src="images/kathariotita-pana.webp"
+                alt="Σωματική καθαριότητα και αλλαγή πάνας κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1611,10 +1661,12 @@
           <a href="service-paketa-ygieinis" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Μηνιαία Πακέτα Ατομικής Υγιεινής.webp"
-                alt="Μηνιαία Πακέτα Ατομικής Υγιεινής"
+                src="images/paketa-ygieinis.webp"
+                alt="Μηνιαία πακέτα ατομικής υγιεινής κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1624,10 +1676,12 @@
           <a href="service-episkepsi-nosilevti" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Επίσκεψη Εξειδικευμένου Νοσηλευτή.webp"
-                alt="Επίσκεψη Εξειδικευμένου Νοσηλευτή"
+                src="images/episkepsi-nosilevti.webp"
+                alt="Επίσκεψη εξειδικευμένου νοσηλευτή κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1637,10 +1691,12 @@
           <a href="service-sakcharo-insulini" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Μέτρηση Σακχάρου και Χορήγηση Ινσουλίνης.webp"
-                alt="Μέτρηση Σακχάρου και Χορήγηση Ινσουλίνης"
+                src="images/sakcharo-insulini.webp"
+                alt="Μέτρηση σακχάρου και χορήγηση ινσουλίνης κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1652,10 +1708,12 @@
           <a href="service-zotika-simeia" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Παρακολούθηση και Καταγραφή των Ζωτικών Σημείων.webp"
-                alt="Παρακολούθηση και Καταγραφή των Ζωτικών Σημείων"
+                src="images/zotika-simeia.webp"
+                alt="Παρακολούθηση ζωτικών σημείων κατ' οίκον"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">
@@ -1667,10 +1725,12 @@
           <a href="service-oxygonotherapia" class="service-card">
             <div class="service-card-image-wrapper">
               <img
-                src="images/Οξυγονοθεραπεία – Χορήγηση με Νεφελοποιητή.webp"
-                alt="Οξυγονοθεραπεία – Χορήγηση με Νεφελοποιητή"
+                src="images/oxygonotherapia.webp"
+                alt="Οξυγονοθεραπεία κατ' οίκον – χορήγηση με νεφελοποιητή"
                 class="service-card-image"
                 loading="lazy"
+                width="1408"
+                height="768"
               />
             </div>
             <div class="service-card-body">

@@ -11,7 +11,11 @@
       "Bash(grep -v \":0$\")",
       "Bash(sed -i 's|href=\"index\"|href=\"/\"|g' *.html)",
       "Bash(sed -i 's|href=\"/index\"|href=\"/\"|g' *.html)",
-      "Bash(sed -i 's|href=\"./index\"|href=\"/\"|g' *.html)"
+      "Bash(sed -i 's|href=\"./index\"|href=\"/\"|g' *.html)",
+      "Bash(python -c \"from PIL import Image; print\\(Image.open\\('euzin-logo.webp'\\).size\\)\")",
+      "Bash(identify euzin-logo.webp)",
+      "Bash(python -c ' *)",
+      "Bash(python)"
     ]
   }
 }
